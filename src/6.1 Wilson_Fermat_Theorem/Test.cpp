@@ -3,14 +3,11 @@
 
 int main()
 {
-	int n;
-	scanf("%d", &n);
+	int a, b, p;
+	scanf("%d %d %d", &a,&b,&p);
 
-	for (int i = 2; i <= n; i++)
-	{
-		if (IsWilsonPrime(i))
-			printf("%d ", i);
-	}
+	printf("%dx = %d (mod %d)\n", a, b, p);
+	printf("x = %d (mod %d)\n", Linear_Congruence(a, b, p),p);
 
 	return 0;
 }

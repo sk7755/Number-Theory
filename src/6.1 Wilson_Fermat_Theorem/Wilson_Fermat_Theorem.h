@@ -7,4 +7,14 @@
 //<Time>	O(n)
 int IsWilsonPrime(long long n);
 
+//Solve linear congruence ax = b (mod p)
+//<Input>
+//a,b,p corresponding with ax = b (mod p)
+//p is prime, a is relatively prime with p
+//<Output>
+//Linear Congruence solution
+//<Time>
+//O(p)
+int Linear_Congruence(int a, int b, int p);
+
 #endif
