@@ -1,13 +1,26 @@
 #include <cstdio>
 #include "Wilson_Fermat_Theorem.h"
 
+void Factorization(int n)
+{
+	int f = Pollard_Factorization(n);
+
+	if (f == 1)
+	{
+		printf("%d ", n);
+		return;
+	}
+	
+	Factorization(f);
+	Factorization(n/f);
+}
+
 int main()
 {
-	int a, b, p;
-	scanf("%d %d %d", &a,&b,&p);
+	int n;
 
-	printf("%dx = %d (mod %d)\n", a, b, p);
-	printf("x = %d (mod %d)\n", Linear_Congruence(a, b, p),p);
+	scanf("%d", &n);
 
+	Factorization(n);
 	return 0;
 }

@@ -17,4 +17,14 @@ int IsWilsonPrime(long long n);
 //O(p)
 int Linear_Congruence(int a, int b, int p);
 
+//Factorization n by Pollard p-1 method
+//<Input>
+//n which you want to factorize
+//<Output>
+//Non trivial factor of n
+//if n is prime, return 1;
+//<Time>
+//O(n) if n is prime
+int Pollard_Factorization(int n);
+
 #endif

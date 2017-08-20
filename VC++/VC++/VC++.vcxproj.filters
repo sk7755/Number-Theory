@@ -24,6 +24,9 @@
     <ClCompile Include="..\..\src\6.1 Wilson_Fermat_Theorem\Linear_Congruence.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\6.1 Wilson_Fermat_Theorem\Pollard_Factorization.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\6.1 Wilson_Fermat_Theorem\Wilson_Fermat_Theorem.h">
