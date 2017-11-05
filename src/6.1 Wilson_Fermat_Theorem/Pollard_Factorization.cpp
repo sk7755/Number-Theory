@@ -36,7 +36,7 @@ int Pollard_Factorization(int n)
 		d = gcd(new_value - 1, n);
 		value = new_value;
 		
-		if (d != 1 && d != n)
+		if (d != 1 && d != n && d != -1 && d != -n)
 			return d;
 	}
 

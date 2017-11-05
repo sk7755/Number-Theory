@@ -18,6 +18,13 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Pseudoprimes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Pseudoprimes.cpp" />
+    <ClCompile Include="test.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{5DB7B3E2-0B2C-44F9-ACD5-4B94E907CB55}</ProjectGuid>
@@ -146,15 +153,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\src\6.1 Wilson_Fermat_Theorem\Linear_Congruence.cpp" />
-    <ClCompile Include="..\..\src\6.1 Wilson_Fermat_Theorem\Pollard_Factorization.cpp" />
-    <ClCompile Include="..\..\src\6.1 Wilson_Fermat_Theorem\Test.cpp" />
-    <ClCompile Include="..\..\src\6.1 Wilson_Fermat_Theorem\IsWilsonPrime.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\src\6.1 Wilson_Fermat_Theorem\Wilson_Fermat_Theorem.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
