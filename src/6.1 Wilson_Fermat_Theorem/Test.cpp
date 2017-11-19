@@ -1,16 +1,26 @@
 #include <cstdio>
 #include "Wilson_Fermat_Theorem.h"
 
+void Factorization(int n)
+{
+	int f = Pollard_Factorization(n);
+
+	if (f == 1)
+	{
+		printf("%d ", n);
+		return;
+	}
+	
+	Factorization(f);
+	Factorization(n/f);
+}
+
 int main()
 {
 	int n;
+
 	scanf("%d", &n);
 
-	for (int i = 2; i <= n; i++)
-	{
-		if (IsWilsonPrime(i))
-			printf("%d ", i);
-	}
-
+	Factorization(n);
 	return 0;
 }
